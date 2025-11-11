@@ -1,0 +1,95 @@
+# =============================================
+# Client .gitignore
+# =============================================
+
+# Environment files - không commit
+.env
+.env.*
+.env.example
+**/.env
+**/.env.*
+**/.env.example
+
+# Flash folder - không commit
+Flash/
+
+# Launcher - chỉ ignore file nặng, vẫn commit source code
+launcher/node_modules/
+launcher/dist/
+launcher/builds/
+launcher/**/*.dll
+launcher/**/*.pak
+launcher/**/*.exe
+launcher/flashver/
+
+# Node modules
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Visual Studio / IDE files
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+**/dist/
+**/builds/
+*.dll
+*.exe
+*.pdb
+
+# Website - Laravel / PHP - không commit các file không cần thiết
+Website/vendor/
+Website/node_modules/
+Website/storage/logs/
+Website/storage/framework/cache/
+Website/storage/framework/sessions/
+Website/storage/framework/views/
+Website/storage/debugbar/
+Website/bootstrap/cache/
+Website/public/storage
+Website/public/hot
+Website/public/mix-manifest.json
+Website/.env
+Website/.env.backup
+Website/.env.production
+Website/.env.*
+Website/*.bak
+Website/**/*.bak
+Website/composer.lock
+Website/package-lock.json
+Website/yarn.lock
+Website/.phpunit.result.cache
+Website/public/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# Archive files
+*.rar
+*.zip
+*.7z
+*.tar
+*.gz
+
